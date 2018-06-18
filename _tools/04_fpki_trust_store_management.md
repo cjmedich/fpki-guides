@@ -1,4 +1,10 @@
-Trust Store Management Script
+---
+layout: default 
+title: Federal PKI Trust Store Management Script
+collection: tools
+permalink: tools/trust_store_management/
+---
+# Trust Store Management Script
 
 The Trust Store Management Script (TSMS) was designed to help update operating system trust stores to facilitate smart card logon for all potential PIV issuers across the Federal Public Key Infrastructure (FPKI). The script was designed to run using Python 3.x on Windows or macOS. 
 
@@ -16,7 +22,7 @@ System Requirements
 Running the script
 FAQs
 
-Download Location: 
+## Download Location: 
 Version 1 of the Trust Store Management Script can be downloaded from this link.
 
 To ensure authenticity, please verify the package SHA-256 hash matches the below:
@@ -24,18 +30,18 @@ To ensure authenticity, please verify the package SHA-256 hash matches the below
 BACBCD9C805197E002FC6FFF289516E78EFE15ECF58B3A34E98E81E401BAE6B0
 ```
 
-Verifying hash on Windows using Powershell...
+### Verifying hash on Windows using Powershell...
 ```
 > Get-FileHash [DOWNLOAD_LOCATION]\Trust_Store_Mangagement_Script_V1.zip | Format-List
 ```
 
-Verifying hash on macOS using Terminal…
+### Verifying hash on macOS using Terminal…
 ```
 $ shasum -a 256 [DOWNLOAD_LOCATION]/Trust_Store_Mangagement_Script_V1.zip
 ```
 
 
-How it works
+## How it works
 
 The TSMS installation package contains three artifacts:
 certLoader.py - This script reads in the targets.json installation file and assembles the output file containing the desired CA certificates.
@@ -69,14 +75,14 @@ Sample below:
 
 By default, all included CAs are marked for installation. Changing the installation flag from TRUE to FALSE will result in a given CA being omitted from the output file.
 
-Target CAs
+## Target CAs
 
 The list of CAs included for installation in this script are presented below.
 
 If you feel another CA should be included, let us know!
 
 
-System requirements:
+## System requirements:
 
 Python v3.x is required to run the Trust Store Management Script. Additionally, on Windows, OpenSSL needs to be installed with an environment path variable set to support .p7b file generation.
 
@@ -87,7 +93,7 @@ Show how to set path https://www.youtube.com/watch?v=z11siMaAfPA
 Your feedback is valued to us. If you have any questions or recommended updates for this script, please contact us at FPKI@gsa.gov.
 
 
-FAQs
+## FAQs
 Q: How often will it be updated?
 A: We anticipate this script being updated quarterly. 
 
