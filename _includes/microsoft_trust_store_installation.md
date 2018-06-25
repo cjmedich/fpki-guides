@@ -29,7 +29,7 @@ Use a utility (_certutil_ on Windows or _openssl_ or _sha1sum_ on UNIX platforms
 	sha1sum fcpca.crt
 ```
 
-![Sample Steps]({{site.baseurl}}/img/verify.gif){:style="width:35%;"}
+![Sample Steps]({{site.baseurl}}/img/verify.gif){:style="width:75%;"}
 
 
 ### Install Using Group Policy Objects
