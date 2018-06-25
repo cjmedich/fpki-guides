@@ -29,6 +29,9 @@ Use a utility (_certutil_ on Windows or _openssl_ or _sha1sum_ on UNIX platforms
 	sha1sum fcpca.crt
 ```
 
+![Sample Steps]({{site.baseurl}}/img/verify.gif){:style="width:35%;"}
+
+
 ### Install Using Group Policy Objects
 
 You can add COMMON to the **Trusted Root Certification Authorities** certificate store by using group policy objects.  
