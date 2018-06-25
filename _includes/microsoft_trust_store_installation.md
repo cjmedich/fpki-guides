@@ -29,7 +29,8 @@ Use a utility (_certutil_ on Windows or _openssl_ or _sha1sum_ on UNIX platforms
 	sha1sum fcpca.crt
 ```
 
-![Sample Steps]({{site.baseurl}}/img/verify.gif){:style="width:75%;"}
+Sample steps run on Microsoft Server 2012 presented below:
+![Sample Steps]({{site.baseurl}}/img/verify.gif){:style="width:85%;"}
 
 
 ### Install Using Group Policy Objects
@@ -48,6 +49,10 @@ Microsoft TechNet articles and other online resources outline the general proced
 ```
 
 - Import the `fcpca.crt` into **Trusted Root Certification Authorities**
+
+Sample steps run on Microsoft Server 2012 presented below:
+![Sample Steps]({{site.baseurl}}/img/gpo.gif){:style="width:85%;"}
+
 
 ### Install Using Certutil
 
@@ -72,3 +77,6 @@ You can add COMMON to the **Enterprise Trust** certificate store by using _certu
 ```
 	gpupdate /force
 ```
+
+Sample steps run on Microsoft Server 2012 presented below:
+![Sample Steps]({{site.baseurl}}/img/certutil.gif){:style="width:85%;"}
